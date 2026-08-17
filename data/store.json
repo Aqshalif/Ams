@@ -1,0 +1,52 @@
+{
+  "version": "v6.0_db_ams_aligned",
+  "kategori_aset": [
+    { "kategori_id": 1, "kode": "KAT-1", "nama_kategori": "Perangkat IT & Komputer", "deskripsi": "Komputer desktop, laptop, server, PC All-in-One, dan printer" },
+    { "kategori_id": 2, "kode": "KAT-2", "nama_kategori": "Network & Infrastructure", "deskripsi": "Router, switch, access point, dan perangkat jaringan" },
+    { "kategori_id": 3, "kode": "KAT-3", "nama_kategori": "Mebel & Furnitur Kantor", "deskripsi": "Meja kerja, kursi ergonomis, lemari dokumen, brankas" },
+    { "kategori_id": 4, "kode": "KAT-4", "nama_kategori": "Elektronik Kantor", "deskripsi": "AC, proyektor meeting, Smart TV, dispenser, microwave" },
+    { "kategori_id": 5, "kode": "KAT-5", "nama_kategori": "Keamanan & Akses Kantor", "deskripsi": "Kamera CCTV dan mesin absensi fingerprint" }
+  ],
+  "lokasi": [
+    { "lokasi_id": 1, "kode": "LOK-1", "nama_lokasi": "Head Office Jakarta - Lt. 3", "deskripsi": "Kantor Pusat HQ Jakarta" },
+    { "lokasi_id": 2, "kode": "LOK-2", "nama_lokasi": "Branch Office Surabaya - Lt. 2", "deskripsi": "Kantor Cabang Surabaya" },
+    { "lokasi_id": 3, "kode": "LOK-3", "nama_lokasi": "Gudang Logistik Cikarang", "deskripsi": "Depo Utama Fleet Cikarang" },
+    { "lokasi_id": 4, "kode": "LOK-4", "nama_lokasi": "Pool Armada Sunter - Jakarta Utara", "deskripsi": "Pool Armada Bus & Van Sunter" }
+  ],
+  "supplier": [
+    { "supplier_id": 1, "kode": "SUP-1", "nama_supplier": "PT Bhinneka Mentari Dimensi", "deskripsi": "Vendor Perangkat IT & Server" },
+    { "supplier_id": 2, "kode": "SUP-2", "nama_supplier": "PT Auto2000 Cikarang", "deskripsi": "Dealer & Service Resmi Toyota" },
+    { "supplier_id": 3, "kode": "SUP-3", "nama_supplier": "PT Herman Miller Indonesia", "deskripsi": "Supplier Mebel & Ergonomic Office" }
+  ],
+  "aset": [
+    { "aset_id": 1, "kode_aset": "AST-2026-0007", "nama_aset": "Genset Silent 50 KVA Perkins", "kategori": "Mesin & Fasilitas", "lokasi": "Gudang Logistik Cikarang", "harga_beli": 145000000, "status": "Non-Aktif" },
+    { "aset_id": 2, "kode_aset": "AST-2026-0006", "nama_aset": "Set Kursi Kerja Ergonomis Herman Miller", "kategori": "Peralatan Kantor", "lokasi": "Head Office Jakarta - Lt. 3", "harga_beli": 24000000, "status": "Dipinjam" },
+    { "aset_id": 3, "kode_aset": "AST-2026-0005", "nama_aset": "Printer HP LaserJet Enterprise M507", "kategori": "Elektronik & IT", "lokasi": "Branch Office Surabaya - Lt. 2", "harga_beli": 12500000, "status": "Tersedia" },
+    { "aset_id": 4, "kode_aset": "AST-2026-0003", "nama_aset": "Server Dell PowerEdge R750", "kategori": "Elektronik & IT", "lokasi": "Head Office Jakarta - Lt. 3", "harga_beli": 85000000, "status": "Tersedia" },
+    { "aset_id": 5, "kode_aset": "AST-2026-0001", "nama_aset": "Lenovo ThinkPad X1 Carbon Gen 11", "kategori": "Elektronik & IT", "lokasi": "Head Office Jakarta - Lt. 3", "harga_beli": 38500000, "status": "Dalam Perawatan" }
+  ],
+  "peminjaman": [
+    { "peminjaman_id": 1, "kode": "PJM-1", "aset": "Set Kursi Kerja Ergonomis Herman Miller", "peminjam": "Rian Hidayat (Auditor)", "asal": "Head Office Jakarta - Lt. 3", "tujuan": "Branch Office Surabaya - Lt. 2", "tgl_pinjam": "2026-08-02", "tgl_kembali": "2026-08-30", "keterangan": "Kunjungan audit internal cabang Surabaya", "status": "Disetujui" },
+    { "peminjaman_id": 2, "kode": "PJM-2", "aset": "Printer HP LaserJet Enterprise M507", "peminjam": "Staff Operasional", "asal": "Branch Office Surabaya - Lt. 2", "tujuan": "Pool Armada Sunter - Jakarta Utara", "tgl_pinjam": "2026-08-06", "tgl_kembali": "2026-08-12", "keterangan": "Backup printer operasional pool Sunter", "status": "Menunggu Persetujuan" }
+  ],
+  "maintenance": [
+    { "maintenance_id": 1, "kode_spk": "SPK-MNT-9901", "aset": "Toyota Hilux B 9123 FLT", "teknisi": "Bengkel Resmi Auto2000 Cikarang", "deskripsi": "Ganti Oli & Servis Berkala 50.000 KM", "biaya": 2450000, "tanggal": "2026-08-10", "status": "Dalam Pengerjaan" },
+    { "maintenance_id": 2, "kode_spk": "SPK-MNT-9902", "aset": "Genset Silent Honda 5000W", "teknisi": "Bengkel Teknik Utama", "deskripsi": "Overhaul Dinamo & Replacement Filter", "biaya": 4200000, "tanggal": "2026-08-08", "status": "Selesai Servis" }
+  ],
+  "penyusutan": [
+    { "penyusutan_id": 1, "kode_aset": "AST-2026-0003", "nama_aset": "Server Dell PowerEdge R750", "kategori": "Elektronik & IT", "harga_perolehan": 85000000, "masa_manfaat": 5, "penyusutan_pertahun": 17000000, "akumulasi_penyusutan": 34000000, "nilai_buku": 51000000 },
+    { "penyusutan_id": 2, "kode_aset": "AST-2026-0007", "nama_aset": "Genset Silent 50 KVA Perkins", "kategori": "Mesin & Fasilitas", "harga_perolehan": 145000000, "masa_manfaat": 8, "penyusutan_pertahun": 18125000, "akumulasi_penyusutan": 36250000, "nilai_buku": 108750000 },
+    { "penyusutan_id": 3, "kode_aset": "AST-2026-0001", "nama_aset": "Lenovo ThinkPad X1 Carbon Gen 11", "kategori": "Elektronik & IT", "harga_perolehan": 38500000, "masa_manfaat": 4, "penyusutan_pertahun": 9625000, "akumulasi_penyusutan": 19250000, "nilai_buku": 19250000 }
+  ],
+  "penghapusan": [
+    { "penghapusan_id": 1, "kode_ba": "BA-WO-8801", "aset": "AC Split Panasonic 2 PK (Rusak Total)", "alasan": "Kerusakan Kompresor Parah & Usia Aset 7 Tahun", "nilai_buku": 1200000, "tanggal": "2026-08-05", "status": "Menunggu Approval" },
+    { "penghapusan_id": 2, "kode_ba": "BA-WO-8802", "aset": "Laptop Dell Vostro 3400 (Hilang)", "alasan": "Kehilangan di Lokasi Proyek & Berita Acara Polisi", "nilai_buku": 3500000, "tanggal": "2026-08-01", "status": "Disetujui Write-Off" }
+  ],
+  "user": [
+    { "user_id": 1, "nama_lengkap": "Administrator System", "username": "admin", "role": "ADMINISTRATOR SYSTEM", "email": "admin@gofleet.co.id", "status": "AKTIF" },
+    { "user_id": 2, "nama_lengkap": "Dewi Lestari", "username": "dewi", "role": "MANAGER FLEET & ASSET", "email": "dewi@gofleet.co.id", "status": "AKTIF" },
+    { "user_id": 3, "nama_lengkap": "Manager Fleet", "username": "manager", "role": "MANAGER FLEET & ASSET", "email": "manager@gofleet.co.id", "status": "AKTIF" },
+    { "user_id": 4, "nama_lengkap": "Rian Hidayat (Auditor)", "username": "rian", "role": "AUDITOR INTERNAL", "email": "rian@gofleet.co.id", "status": "AKTIF" },
+    { "user_id": 5, "nama_lengkap": "Staff Operasional", "username": "staff", "role": "STAFF OPERASIONAL", "email": "staff@gofleet.co.id", "status": "AKTIF" }
+  ]
+}
